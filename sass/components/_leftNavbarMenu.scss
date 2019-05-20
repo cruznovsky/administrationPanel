@@ -1,0 +1,20 @@
+.leftNavbar__menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.leftNavbar__menu--item-link {
+  display: block;
+  text-decoration: none;
+  color: #979797;
+  font-family: "Roboto", sans-serif;
+  height: 40px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.leftNavbar__menu--item-link-icon {
+    width: 20px;
+    fill: white;
+}
