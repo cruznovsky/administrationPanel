@@ -1,0 +1,38 @@
+.messanger__title {
+  color: $messanger-title-color;
+  text-transform: uppercase;
+  padding-left: 18px;
+  text-align: left;
+  font-weight: 500;
+  font-size: $messanger-title-size;
+  font-family: $messanger-title-font;
+}
+
+.messanger__contact {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-left: 18px;
+  padding-top: 8px;
+}
+
+.messanger__contact--photo {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 45px;
+}
+
+.messanger__contact--online {
+  position: absolute;
+  left: 50px;
+}
+
+.messanger__contact--name {
+  color: #56819f;
+  font-weight: 300;
+  font-family: $messanger-contact-name-font;
+  font-size: $messanger-contact-name-size;
+  float: right;
+  margin-right: 50px;
+}

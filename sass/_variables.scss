@@ -1,10 +1,19 @@
 /* Colors */
 $basic-bcg-color: #f5f5f2;
-$leftNavbar-bcg-color: #333;
+$leftNavbar-bcg-color: #111;
 $leftNavbar-menu-color: #f5f5f2;
+$leftNavbar-links-color: #979797;
+$navbar-border-bottom-color: #474747;
+$messanger-title-color: #808080;
+$leftNavbar-menu-item-link-hover-color: #ffa200;
+$leftNavbar-menu-item-link-color: white;
 
 /* Font sizes */
-
+$messanger-title-size: 14px;
+$messanger-contact-name-size: 14px;
+$leftNavbar-menu-item-link-size: 14px;
 
 /* Fonts */
-$leftNavbar-menu-font: 'Roboto', sans-serif;
+$leftNavbar-menu-font: "Roboto", sans-serif;
+$messanger-title-font: "Roboto", sans-serif;
+$messanger-contact-name-font: "Roboto", sans-serif;
