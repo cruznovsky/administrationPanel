@@ -4,3 +4,9 @@ body {
   box-sizing: border-box;
   background-color: $basic-bcg-color;
 }
+
+.wrapper {
+  width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
