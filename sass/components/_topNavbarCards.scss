@@ -1,89 +1,83 @@
-.topNavbar__wallet {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 190px;
-  border-right: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-}
-
-.iconWallet {
-  color: #8c8c8c;
-  font-size: 18px;
-}
-
-.iconArrowDown {
-  color: #8c8c8c;
-  font-size: 12px;
-}
-
-.iconNotification {
-  color: #8c8c8c;
-  font-size: 18px;
-}
-
-.iconProfile {
-  color: #8c8c8c;
-  font-size: 18px;
-}
-
-.iconQuit {
-  color: #8c8c8c;
-  font-size: 18px;
-}
-
-.topNavbar__exit {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.notification-indicator {
-  position: absolute;
-  top: 30%;
-  left: 52%;
-}
-
-.topNavbar__wallet--cash {
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  color: #9c9c9c;
-  float: right;
-  font-weight: 700;
-}
-
-.topNavbar__notification {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  border-right: 1px solid #ddd;
-  transition: 0.3s;
-}
-
-.topNavbar__notification:hover {
-  background-color: #e3e3e3;
-  cursor: pointer;
-}
-
-.topNavbar__profile {
-  display: flex;
-  align-items: center;
-  width: 175px;
-  border-right: 1px solid #ddd;
-}
-
-.topNavbar__exit {
-  width: 60px;
-  border-right: 1px solid #ddd;
-}
-
-.topNavbar__profile--name {
-  font-family: "Roboto", sans-serif;
-  color: #56819f;
-  font-size: 13px;
-  font-weight: 500;
+.topNavbar {
+  &__wallet {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 190px;
+    border-right: 1px solid $topNavbar-borders-color;
+    border-left: 1px solid $topNavbar-borders-color;
+    .icon {
+      @include icon;
+    }
+    .iconWallet {
+      color: $topNavbar-icons-color;
+      font-size: $topNavbar-wallet-iconWallet-size;
+    }
+    &--cash {
+      font-size: $topNavbar-wallet-cash-size;
+      font-family: $topNavbar-wallet-cash-font;
+      color: $topNavbar-wallet-cash-color;
+      float: right;
+      font-weight: 700;
+    }
+    .iconArrowDown {
+      color: $topNavbar-icons-color;
+      font-size: $topNavbar-wallet-iconArrowDown-size;
+    }
+  }
+  .topNavbar__notification {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    border-right: 1px solid $topNavbar-borders-color;
+    transition: 0.3s;
+    .iconNotification {
+      color: $topNavbar-icons-color;
+      font-size: $topNavbar-notification-iconNotification-size;
+    }
+    .notification-indicator {
+      position: absolute;
+      top: 30%;
+      left: 52%;
+    }
+    &:hover {
+      background-color: $topNavbar-notification-hover-bcgColor;
+      cursor: pointer;
+    }
+  }
+  .topNavbar__profile {
+    display: flex;
+    align-items: center;
+    width: 175px;
+    border-right: 1px solid $topNavbar-borders-color;
+    .iconProfile {
+      color: $topNavbar-icons-color;
+      font-size: $topNavbar-profile-iconProfile-size;
+    }
+    .icon {
+      @include icon;
+    }
+    &--name {
+      font-family: $topNavbar-profile-name-font;
+      color: $topNavbar-profile-name-color;
+      font-size: $topNavbar-profile-name-size;
+      font-weight: 500;
+    }
+  }
+  .topNavbar__exit {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    border-right: 1px solid $topNavbar-borders-color;
+    .iconQuit {
+      color: $topNavbar-icons-color;
+      font-size: $topNavbar-exit-iconQuit-size;
+    }
+  }
 }

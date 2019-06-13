@@ -1,0 +1,31 @@
+@mixin icon {
+  vertical-align: middle;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+@mixin shadow {
+  box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.75);
+}
+
+@mixin data {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #979797;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-right: 140px;
+}
+
+@mixin dataBorder {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+@mixin chartTitle {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #979797;
+  font-weight: 800;
+  letter-spacing: 1px;
+}

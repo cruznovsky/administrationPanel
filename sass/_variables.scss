@@ -5,15 +5,48 @@ $leftNavbar-menu-color: #f5f5f2;
 $leftNavbar-links-color: #979797;
 $navbar-border-bottom-color: #474747;
 $messanger-title-color: #808080;
-$leftNavbar-menu-item-link-hover-color: #ffa200;
+$leftNavbar-menu-item-link-hover-borderColor: #ffa200;
 $leftNavbar-menu-item-link-color: white;
+$leftNavbar-menu-item-link-hover-bcgColor: rgba(166, 166, 166, 0.1);
+$messanger-contact--name-color: #56819f;
+$topNavbar-icons-color: #8c8c8c;
+$topNavbar-borders-color: #ddd;
+$topNavbar-wallet-cash-color:#9c9c9c;
+$topNavbar-notification-hover-bcgColor: #e3e3e3;
+$topNavbar-profile-name-color: #56819f;
+$topNavbar-bcgColor: white;
+$topNavbar-borderColor: #ddd;
+$generalStatistic-title-color:#979797;
+$generalStatistic-title-bcgColor: white;
+$generalStatistic-title-border-color: #ddd;
+$generalStatistic-dates-border-color: #ddd;
+$generalStatistic-secondDates-border-color: #ddd;
+$generalStatistic-iconCalendar-color: #9c9c9c;
+$generalStatistic-dates-button-bcgColor: #F58220;
+$generalStatistic-dates-iconRefresh-color: white;
+$generalStatistic-wrap-border-color: #ddd;
+
 
 /* Font sizes */
 $messanger-title-size: 14px;
 $messanger-contact-name-size: 14px;
 $leftNavbar-menu-item-link-size: 14px;
+$topNavbar-wallet-cash-size: 20px;
+$topNavbar-wallet-iconWallet-size: 18px;
+$topNavbar-wallet-iconArrowDown-size: 12px;
+$topNavbar-notification-iconNotification-size: 18px;
+$topNavbar-profile-iconProfile-size: 18px;
+$topNavbar-exit-iconQuit-size: 18px;
+$topNavbar-profile-name-size: 13px;
+$generalStatistic-title-size: 15px;
+$generalStatistic-dates-size: 14px;
+$generalStatistic-iconCalendar-size: 13px;
 
 /* Fonts */
 $leftNavbar-menu-font: "Roboto", sans-serif;
 $messanger-title-font: "Roboto", sans-serif;
 $messanger-contact-name-font: "Roboto", sans-serif;
+$topNavbar-wallet-cash-font: "Roboto", sans-serif;
+$topNavbar-profile-name-font: "Roboto", sans-serif;
+$generalStatistic-title-font: "Roboto", sans-serif;
+$generalStatistic-dates-font: "Roboto", sans-serif;

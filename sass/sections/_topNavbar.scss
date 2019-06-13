@@ -1,7 +1,9 @@
 .topNavbar {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: flex-end;
   height: 69px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
+  background-color: $topNavbar-bcgColor;
+  border-bottom: 1px solid $topNavbar-borderColor;
 }

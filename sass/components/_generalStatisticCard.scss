@@ -1,0 +1,84 @@
+.general {
+  @include shadow;
+  &_title {
+    color: $generalStatistic-title-color;
+    padding: 18px;
+    font-size: $generalStatistic-title-size;
+    font-family: $generalStatistic-title-font;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 1px solid $generalStatistic-title-border-color;
+  }
+  .general-wrap {
+    padding: 25px 0 35px 0;
+    text-align: center;
+    border-bottom: 1px solid $generalStatistic-wrap-border-color;
+    .general_dates {
+      display: inline-block;
+      height: 44px;
+      width: 325px;
+      border: 1px solid $generalStatistic-dates-border-color;
+      border-radius: 5px;
+      font-family: $generalStatistic-dates-font;
+      font-size: $generalStatistic-dates-size;
+      .general_dates--firstDate {
+        float: left;
+        padding-left: 18px;
+      }
+      .general_dates--secondDate {
+        float: left;
+        padding-left: 18px;
+        border-left: 1px solid $generalStatistic-secondDates-border-color;
+      }
+      .iconCalendar {
+        position: relative;
+        top: 30%;
+        font-size: $generalStatistic-iconCalendar-size;
+        color: $generalStatistic-iconCalendar-color;
+        float: right;
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+    }
+    .general_dates--button {
+      float: right;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 31%;
+      width: 44px;
+      height: 44px;
+      background-color: $generalStatistic-dates-button-bcgColor;
+      border-radius: 5px;
+      padding-top: 5px;
+      .iconRefresh {
+        color: $generalStatistic-dates-iconRefresh-color;
+      }
+    }
+  }
+  .general_data {
+    margin: 20px 186px 0;
+    .dataBreak {
+      margin-right: 60px;
+      .general_data--visit {
+        @include data;
+      }
+    }
+    &--deposit {
+      @include data;
+    }
+    &--border {
+      @include dataBorder;
+    }
+    .numberGoEnd {
+      float: right;
+    }
+    .general_chart {
+      margin-top: 40px;
+      &--title {
+        @include chartTitle;
+      }
+    }
+  }
+}
