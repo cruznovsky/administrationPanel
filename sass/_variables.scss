@@ -11,21 +11,30 @@ $leftNavbar-menu-item-link-hover-bcgColor: rgba(166, 166, 166, 0.1);
 $messanger-contact--name-color: #56819f;
 $topNavbar-icons-color: #8c8c8c;
 $topNavbar-borders-color: #ddd;
-$topNavbar-wallet-cash-color:#9c9c9c;
+$topNavbar-wallet-cash-color: #9c9c9c;
 $topNavbar-notification-hover-bcgColor: #e3e3e3;
 $topNavbar-profile-name-color: #56819f;
 $topNavbar-bcgColor: white;
 $topNavbar-borderColor: #ddd;
-$generalStatistic-title-color:#979797;
-$generalStatistic-title-bcgColor: white;
+$generalStatistic-title-color: #979797;
+$generalStatistic-bcgColor: white;
 $generalStatistic-title-border-color: #ddd;
 $generalStatistic-dates-border-color: #ddd;
 $generalStatistic-secondDates-border-color: #ddd;
 $generalStatistic-iconCalendar-color: #9c9c9c;
-$generalStatistic-dates-button-bcgColor: #F58220;
+$generalStatistic-dates-button-bcgColor: #f58220;
 $generalStatistic-dates-iconRefresh-color: white;
 $generalStatistic-wrap-border-color: #ddd;
-
+$links-bcgColor: white;
+$links-title-color: #979797;
+$links-title-border-color: #ddd;
+$links-firstButton-bcgColor: #f58220;
+$links-firstButton-color: white;
+$links-table-border-color: #ddd;
+$links-table-names-color: #979797;
+$links-table-names-linksColor: #56819f;
+$links-secondButton-bcgColor: #f58220;
+$links-secondButton-color: white;
 
 /* Font sizes */
 $messanger-title-size: 14px;
@@ -41,6 +50,9 @@ $topNavbar-profile-name-size: 13px;
 $generalStatistic-title-size: 15px;
 $generalStatistic-dates-size: 14px;
 $generalStatistic-iconCalendar-size: 13px;
+$links-title-size: 15px;
+$links-firstButton-size: 16px;
+$links-secondButton-size: 16px;
 
 /* Fonts */
 $leftNavbar-menu-font: "Roboto", sans-serif;
@@ -50,3 +62,8 @@ $topNavbar-wallet-cash-font: "Roboto", sans-serif;
 $topNavbar-profile-name-font: "Roboto", sans-serif;
 $generalStatistic-title-font: "Roboto", sans-serif;
 $generalStatistic-dates-font: "Roboto", sans-serif;
+$links-title-font: "Roboto", sans-serif;
+$links-firstButton-font: "Roboto", sans-serif;
+$links-table-names-font: "Roboto", sans-serif;
+$links-table-names-linksFont: "Roboto", sans-serif;
+$links-secondButton-font: "Roboto", sans-serif;

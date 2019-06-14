@@ -10,6 +10,8 @@
     border-bottom: 1px solid $generalStatistic-title-border-color;
   }
   .general-wrap {
+    display: flex;
+    justify-content: center;
     padding: 25px 0 35px 0;
     text-align: center;
     border-bottom: 1px solid $generalStatistic-wrap-border-color;
@@ -31,8 +33,7 @@
         border-left: 1px solid $generalStatistic-secondDates-border-color;
       }
       .iconCalendar {
-        position: relative;
-        top: 30%;
+        margin-top: 14px;
         font-size: $generalStatistic-iconCalendar-size;
         color: $generalStatistic-iconCalendar-color;
         float: right;
@@ -42,16 +43,15 @@
     }
     .general_dates--button {
       float: right;
-      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      right: 31%;
       width: 44px;
       height: 44px;
       background-color: $generalStatistic-dates-button-bcgColor;
       border-radius: 5px;
       padding-top: 5px;
+      margin-left: 20px;
       .iconRefresh {
         color: $generalStatistic-dates-iconRefresh-color;
       }
