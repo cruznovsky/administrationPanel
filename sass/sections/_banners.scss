@@ -1,0 +1,7 @@
+.banners {
+  width: 98%;
+  height: 590px;
+  margin: 1%;
+  background-color: $banners-bcgColor;
+  @include shadow;
+}

@@ -3,4 +3,5 @@
   height: 800px;
   margin: 1%;
   background-color: $links-bcgColor;
+  @include shadow;
 }

@@ -1,0 +1,60 @@
+.banners {
+  &_title {
+    color: $banners-title-color;
+    padding: 18px;
+    font-size: $banners-title-size;
+    font-family: $banners-title-font;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 1px solid $banners-title-border-color;
+  }
+  &_firstButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: $banners-firstButton-bcgColor;
+    color: $banners-firstButton-color;
+    font-size: $banners-firstButton-size;
+    font-family: $banners-firstButton-font;
+    margin: 30px auto 30px;
+  }
+  &_table {
+    width: 680px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    td {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      border-top: 1px solid $banners-table-border-color;
+      border-bottom: 1px solid $banners-table-border-color;
+    }
+    &--names {
+      color: $banners-table-names-color;
+      font-weight: 800;
+      font-family: $banners-table-names-font;
+      padding-left: 16px;
+    }
+    a {
+      padding-left: 140px;
+      text-decoration: none;
+      font-family: $banners-table-names-linksFont;
+      color: $banners-table-names-linksColor;
+    }
+  }
+  &_secondButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: $banners-secondButton-bcgColor;
+    color: $banners-secondButton-color;
+    font-size: $banners-secondButton-size;
+    font-family: $banners-secondButton-font;
+    margin: 30px auto 30px;
+  }
+}
