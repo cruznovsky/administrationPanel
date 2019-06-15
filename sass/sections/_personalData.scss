@@ -1,0 +1,7 @@
+.personalData {
+  width: 98%;
+  height: 1000px;
+  margin: 1%;
+  background-color: $personalData-bcgColor;
+  @include shadow;
+}

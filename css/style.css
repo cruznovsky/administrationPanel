@@ -348,6 +348,50 @@ template { display: none; }
 
 .banners_secondButton { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 120px; height: 40px; border-radius: 5px; background-color: #f58220; color: white; font-size: 16px; font-family: "Roboto", sans-serif; margin: 30px auto 30px; }
 
+.personalData_title { color: #979797; padding: 18px; font-size: 15px; font-family: "Roboto", sans-serif; font-weight: 800; text-transform: uppercase; border-bottom: 1px solid #ddd; }
+
+.personalData_first { margin: 40px 0; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-bottom: 20px; border-bottom: 1px solid #ddd; }
+
+.personalData_first--form { width: 460px; }
+
+.personalData_first--form .form-name { height: 40px; width: 460px; line-height: 35px; margin-bottom: 20px; }
+
+.personalData_first--form .form-name input { float: right; height: 40px; width: 300px; border-radius: 5px; border: 1px solid #ddd; font-family: "Roboto", sans-serif; padding: 5px; outline: none; }
+
+.personalData_first--form .form-name label { color: #979797; font-weight: 800; font-family: "Roboto", sans-serif; }
+
+.personalData_second { margin: 40px 0; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-bottom: 20px; border-bottom: 1px solid #ddd; }
+
+.personalData_second--form { width: 460px; }
+
+.personalData_second--form .form-name { height: 40px; width: 460px; line-height: 35px; margin-bottom: 20px; }
+
+.personalData_second--form .form-name input { float: right; height: 40px; width: 300px; border-radius: 5px; border: 1px solid #ddd; font-family: "Roboto", sans-serif; padding: 5px; outline: none; }
+
+.personalData_second--form .form-name label { color: #979797; font-weight: 800; font-family: "Roboto", sans-serif; }
+
+.personalData_third { margin: 40px 0; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-bottom: 20px; border-bottom: 1px solid #ddd; }
+
+.personalData_third--form { width: 460px; }
+
+.personalData_third--form .form-name { height: 40px; width: 460px; line-height: 35px; margin-bottom: 20px; }
+
+.personalData_third--form .form-name input { float: right; height: 40px; width: 300px; border-radius: 5px; border: 1px solid #ddd; font-family: "Roboto", sans-serif; padding: 5px; outline: none; }
+
+.personalData_third--form .form-name label { color: #979797; font-weight: 800; font-family: "Roboto", sans-serif; }
+
+.personalData_fourth { margin: 40px 0; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-bottom: 20px; border-bottom: 1px solid #ddd; }
+
+.personalData_fourth--form { width: 460px; }
+
+.personalData_fourth--form .form-name { height: 40px; width: 460px; line-height: 35px; margin-bottom: 20px; }
+
+.personalData_fourth--form .form-name input { float: right; height: 40px; width: 300px; border-radius: 5px; border: 1px solid #ddd; font-family: "Roboto", sans-serif; padding: 5px; outline: none; }
+
+.personalData_fourth--form .form-name label { color: #979797; font-weight: 800; font-family: "Roboto", sans-serif; }
+
+.personalData_button { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 120px; height: 40px; border-radius: 5px; background-color: #f58220; color: white; font-size: 16px; font-family: "Roboto", sans-serif; margin: -8px auto 30px; }
+
 .leftNavbar { position: -webkit-sticky; position: sticky; top: 0; height: 100vh; background-color: #111; }
 
 .topNavbar { position: -webkit-sticky; position: sticky; top: 0; display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; height: 69px; background-color: white; border-bottom: 1px solid #ddd; }
@@ -357,3 +401,5 @@ template { display: none; }
 .links { width: 98%; height: 800px; margin: 1%; background-color: white; box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.75); }
 
 .banners { width: 98%; height: 590px; margin: 1%; background-color: white; box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.75); }
+
+.personalData { width: 98%; height: 1000px; margin: 1%; background-color: white; box-shadow: 2px 2px 4px -1px rgba(0, 0, 0, 0.75); }

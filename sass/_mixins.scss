@@ -29,3 +29,34 @@
   font-weight: 800;
   letter-spacing: 1px;
 }
+@mixin form {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $personalData-form-border-color;
+}
+@mixin formName {
+  width: 460px;
+  .form-name {
+    height: 40px;
+    width: 460px;
+    line-height: 35px;
+    margin-bottom: 20px;
+    input {
+      float: right;
+      height: 40px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-family: "Roboto", sans-serif;
+      padding: 5px;
+      outline: none;
+    }
+    label {
+      color: #979797;
+      font-weight: 800;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+}
