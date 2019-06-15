@@ -1,25 +1,9 @@
 .banners {
   &_title {
-    color: $banners-title-color;
-    padding: 18px;
-    font-size: $banners-title-size;
-    font-family: $banners-title-font;
-    font-weight: 800;
-    text-transform: uppercase;
-    border-bottom: 1px solid $banners-title-border-color;
+    @include cardTitle;
   }
   &_firstButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: $banners-firstButton-bcgColor;
-    color: $banners-firstButton-color;
-    font-size: $banners-firstButton-size;
-    font-family: $banners-firstButton-font;
-    margin: 30px auto 30px;
+    @include wideButton;
   }
   &_table {
     width: 680px;
@@ -45,16 +29,6 @@
     }
   }
   &_secondButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: $banners-secondButton-bcgColor;
-    color: $banners-secondButton-color;
-    font-size: $banners-secondButton-size;
-    font-family: $banners-secondButton-font;
-    margin: 30px auto 30px;
+    @include wideButton;
   }
 }

@@ -1,12 +1,6 @@
 .general {
   &_title {
-    color: $generalStatistic-title-color;
-    padding: 18px;
-    font-size: $generalStatistic-title-size;
-    font-family: $generalStatistic-title-font;
-    font-weight: 800;
-    text-transform: uppercase;
-    border-bottom: 1px solid $generalStatistic-title-border-color;
+    @include cardTitle;
   }
   .general-wrap {
     display: flex;

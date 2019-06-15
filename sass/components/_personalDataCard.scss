@@ -1,12 +1,6 @@
 .personalData {
   &_title {
-    color: $personalData-title-color;
-    padding: 18px;
-    font-size: $personalData-title-size;
-    font-family: $personalData-title-font;
-    font-weight: 800;
-    text-transform: uppercase;
-    border-bottom: 1px solid $personalData-title-border-color;
+    @include cardTitle;
   }
   &_first {
     @include form;
@@ -33,16 +27,7 @@
     }
   }
   &_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: $banners-firstButton-bcgColor;
-    color: $banners-firstButton-color;
-    font-size: $banners-firstButton-size;
-    font-family: $banners-firstButton-font;
+    @include wideButton;
     margin: -8px auto 30px;
   }
 }

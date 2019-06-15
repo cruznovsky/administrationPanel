@@ -1,25 +1,9 @@
 .links {
   &_title {
-    color: $links-title-color;
-    padding: 18px;
-    font-size: $links-title-size;
-    font-family: $links-title-font;
-    font-weight: 800;
-    text-transform: uppercase;
-    border-bottom: 1px solid $links-title-border-color;
+    @include cardTitle;
   }
   &_firstButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: $links-firstButton-bcgColor;
-    color: $links-firstButton-color;
-    font-size: $links-firstButton-size;
-    font-family: $links-firstButton-font;
-    margin: 30px auto 30px;
+    @include wideButton;
   }
   &_table {
     width: 680px;
@@ -45,16 +29,6 @@
     }
   }
   &_secondButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: $links-secondButton-bcgColor;
-    color: $links-secondButton-color;
-    font-size: $links-secondButton-size;
-    font-family: $links-secondButton-font;
-    margin: 30px auto 30px;
+    @include wideButton;
   }
 }
