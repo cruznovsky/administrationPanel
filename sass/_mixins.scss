@@ -84,3 +84,33 @@
     }
   }
 }
+
+@mixin pagination {
+  &_pagination {
+    display: flex;
+    justify-content: center;
+    &--list {
+      display: inline-block;
+      padding: 0;
+      margin: 30px 0 0;
+      li {
+        display: inline;
+        a {
+          color: #56819f;
+          float: left;
+          padding: 8px 16px;
+          text-decoration: none;
+          border-radius: 5px;
+          &:hover:not(.active) {
+            color: #ffa200;
+          }
+        }
+        .active {
+          background-color: #e3e3e3;
+          color: #979797 !important;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

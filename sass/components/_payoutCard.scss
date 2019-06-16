@@ -1,4 +1,4 @@
-.details {
+.payout {
   &_title {
     @include cardTitle;
   }
@@ -8,7 +8,7 @@
     padding: 20px 0 35px 0;
     text-align: center;
     border-bottom: 1px solid $generalStatistic-wrap-border-color;
-    .details_dates {
+    .payout_dates {
       display: inline-block;
       height: 44px;
       width: 325px;
@@ -16,11 +16,11 @@
       border-radius: 5px;
       font-family: $generalStatistic-dates-font;
       font-size: $generalStatistic-dates-size;
-      .details_dates--firstDate {
+      .payout_dates--firstDate {
         float: left;
         padding-left: 18px;
       }
-      .details_dates--secondDate {
+      .payout_dates--secondDate {
         float: left;
         padding-left: 18px;
         border-left: 1px solid $generalStatistic-secondDates-border-color;
@@ -34,7 +34,7 @@
         padding-right: 18px;
       }
     }
-    .details_dates--button {
+    .payout_dates--button {
       float: right;
       display: flex;
       justify-content: center;
@@ -51,7 +51,7 @@
     }
   }
   &_table {
-    width: 98%;
+    width: 96%;
     border-collapse: collapse;
     margin: 40px auto 0;
     thead {
@@ -63,6 +63,15 @@
           margin-right: 0;
           font-size: 14px;
           border-bottom: 1px solid $details-table-border-color;
+          &:nth-child(1) {
+            width: 320px;
+          }
+          &:nth-child(2) {
+            width: 320px;
+          }
+          &:nth-child(3) {
+            width: 250px;
+          }
         }
       }
     }

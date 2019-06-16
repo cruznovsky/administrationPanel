@@ -1,0 +1,7 @@
+.payout {
+  width: 98%;
+  height: 800px;
+  margin: 1%;
+  background-color: $basic-card-bcgColor;
+  @include shadow;
+}
