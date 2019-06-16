@@ -1,0 +1,7 @@
+.postback {
+  width: 98%;
+  height: 820px;
+  margin: 1%;
+  background-color: $basic-card-bcgColor;
+  @include shadow;
+}

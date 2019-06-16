@@ -410,7 +410,8 @@
                     <div class="details_pagination">
                         <ul class="details_pagination--list">
                             <li><a href="#">
-                                    <</a> </li> <li><a class="active" href="#">1</a></li>
+                                </a> </li>
+                            <li><a class="active" href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
@@ -504,7 +505,8 @@
                     <div class="payout_pagination">
                         <ul class="payout_pagination--list">
                             <li><a href="#">
-                                    <</a> </li> <li><a class="active" href="#">1</a></li>
+                                </a> </li>
+                            <li><a class="active" href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
@@ -516,6 +518,96 @@
                             <li><a href="#">></a></li>
                         </ul>
                     </div>
+                </div>
+                <div class="postback">
+                    <p class="postback_title">New postback</p>
+                    <div class="postback_firstSection">
+                        <p class="postback_firstSection--information">You can insert some parameters in this postback:
+                        </p>
+                        <div class="postback_firstSection--first">
+                            <form class="postback_firstSection--form" action="#">
+                                <div class="firstLineForm">
+                                    <div class="signupForm">
+                                        <label>Signup</label>
+                                        <textarea cols="30" rows="10" placeholder="crm_userld=%user_id% "></textarea>
+                                    </div>
+                                    <div class="depositForm">
+                                        <label>Deposit</label>
+                                        <textarea cols="30" rows="10" placeholder="crm_userld=%user_id%"></textarea>
+                                    </div>
+                                </div>
+                                <div class="secondLineForm">
+                                    <div class="typeForm">
+                                        <label>Postback type</label>
+                                        <select>
+                                            <option>S2S (http://..)</option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="countriesForm">
+                                        <label>To countries</label>
+                                        <select>
+                                            <option>Select coutries</option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                    <div class="sendingForm">
+                                        <label>Sending options</label>
+                                        <select>
+                                            <option>Select</option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="postback_secondSection">
+                        <div class="row">
+                            <div class="col-xl-6 rightBorder">
+                                <form class="postback_secondSection--form">
+                                    <p><span>Not</span> send statuses</p>
+                                    <div class="notStatuses--first">
+                                        <input type="checkbox" class="test">
+                                        <span class="checkbox-custom"></span>
+                                        <label>checkNumber</label>
+                                    </div>
+                                    <div class="notStatuses--second">
+                                        <input type="checkbox" class="test">
+                                        <span class="checkbox-custom"></span>
+                                        <label>noAnswerr</label>
+                                    </div>
+                                    <div class="notStatuses--third">
+                                        <input type="checkbox" class="test">
+                                        <span class="checkbox-custom"></span>
+                                        <label>noCall</label>
+                                    </div>
+                                    <div class="notStatuses--fourth">
+                                        <input type="checkbox" class="test">
+                                        <span class="checkbox-custom"></span>
+                                        <label>callAgain</label>
+                                    </div>
+                                </form>
+                                <div class="scrollbar"></div>
+                            </div>
+                            <div class="col-xl-6 rightSide">
+                                <p>Send after:</p>
+                                <p>0</p>
+                                <p>168</p>
+                                <div class="bar"></div>
+                                <img src="images/triangle.png" alt="Orange triangle">
+                                <p class="hours">104 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postback_wrap">
+                        <div class="postback_button">Create pixel</div>
+                    </div>
+
                 </div>
             </div>
         </div>
