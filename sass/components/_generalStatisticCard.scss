@@ -16,6 +16,12 @@
       border-radius: 5px;
       font-family: $generalStatistic-dates-font;
       font-size: $generalStatistic-dates-size;
+      &:hover {
+        border: 1px solid black;
+        .iconCalendar {
+          color: black;
+        }
+      }
       .general_dates--firstDate {
         float: left;
         padding-left: 18px;
@@ -45,6 +51,13 @@
       border-radius: 5px;
       padding-top: 5px;
       margin-left: 20px;
+      outline: none;
+      border: 1px solid #f58220;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in;
+      &:hover {
+        background-color: #ffa200;
+      }
       .iconRefresh {
         color: $generalStatistic-dates-iconRefresh-color;
       }

@@ -30,6 +30,13 @@
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   margin: 30px auto 30px;
+  outline: none;
+  border: 1px solid #f58220;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+  &:hover {
+    background-color: #ffa200;
+  }
 }
 
 @mixin data {
