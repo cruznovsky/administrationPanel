@@ -31,10 +31,18 @@ document.addEventListener('keyup', function (e) {
 })
 
 var newLink = document.getElementsByClassName('addNewLink');
+var newBanner = document.getElementsByClassName('addNewBanner');
 
 newLink[0].addEventListener('click', function () {
     openModal('#newLink');
 });
 newLink[1].addEventListener('click', function () {
     openModal('#newLink');
+});
+
+newBanner[0].addEventListener('click', function () {
+    openModal('#newBanner');
+});
+newBanner[1].addEventListener('click', function () {
+    openModal('#newBanner');
 });

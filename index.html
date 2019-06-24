@@ -176,7 +176,7 @@
                 </div>
                 <div class="banners">
                     <p class="banners_title">Banners</p>
-                    <button class="banners_firstButton">+ add new</button>
+                    <button class="banners_firstButton addNewBanner">+ add new</button>
                     <table class="banners_table">
                         <tbody>
                             <tr>
@@ -205,7 +205,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <button class="banners_secondButton">+ add new</button>
+                    <button class="banners_secondButton addNewBanner">+ add new</button>
                 </div>
                 <div class="personalData">
                     <p class="personalData_title">Personal data</p>
@@ -563,7 +563,6 @@
                                         </select>
                                     </div>
                                 </div>
-
                             </form>
                         </div>
                     </div>
@@ -883,6 +882,236 @@
                 <button class="newLink_generator--btn1" disabled><i class="icon-links linkIcon"></i> Copy link</button>
             </div>
         </div>
+        <div class="modal newBanner" id="newBanner">
+            <i class="icon-close btn-close js--close"></i>
+            <p class="newBanner_title">Add banners</p>
+            <div class="newBanner_firstSection">
+                <div class="newBanner_firstSection--name">
+                    <label>Scheme name</label>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="newBanner_firstSection--compain">
+                    <label>Compain</label>
+                    <select>
+                        <option>Select compain</option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+                <div class="newBanner_firstSection--language">
+                    <label>Language</label>
+                    <img src="images/uk.png" alt="Flag of UK">
+                    <select>
+                        <option>EN</option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="secondLineForm">
+                <div class="weightForm">
+                    <label>Weight-Height</label>
+                    <select>
+                        <option>S2S (http://..)</option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+                <div class="designForm">
+                    <label>Design</label>
+                    <select>
+                        <option>Select coutries</option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+                <div class="fileForm">
+                    <label>File type</label>
+                    <select>
+                        <option>Select</option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <div class="newBanner_secondSection">
+                <div class="row newBannerFormWrap">
+                    <div class="col-xl-6 columnGap">
+                        <div class="newBanner_secondSection--bannersTitle"><label>Select banners</label></div>
+                        <div class="row newBannerFormWrap_column">
+                            <div class="col-xl-12">
+                                <form>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>checkNumber</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>noAnswerr</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>noCall</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>callAgain</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>checkNumber</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>noAnswerr</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>noCall</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>callAgain</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>checkNumber</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>noAnswerr</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>noCall</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>callAgain</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="newBanner_secondSection--bannersTitle"><label>Select websites</label></div>
+                        <div class="row newBannerFormWrap_column columnBreak">
+                            <div class="col-xl-12">
+                                <form>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>checkNumber</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>noAnswerr</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>noCall</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>callAgain</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>checkNumber</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>noAnswerr</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>noCall</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>callAgain</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>checkNumber</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>noAnswerr</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>noCall</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                    <div class="checkboxItem">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"><i class="fas fa-check checkIcon"></i></span>
+                                        <label>callAgain</label>
+                                        <i class="icon-show showIcon"></i>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newBanner_generator">
+                <div class="inputLinkGeneratorWrap">
+                    <input type="text" placeholder="Generated link">
+                </div>
+                <button class="newBanner_generator--btn2">Save</button>
+                <button class="newBanner_generator--btn1" disabled><i class="icon-links linkIcon"></i> Copy
+                    link</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
     </div>
     <script src="js/script.js">
     </script>
