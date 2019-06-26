@@ -1,0 +1,112 @@
+.onlineChat {
+  width: 1100px;
+  height: 550px;
+  &_title {
+    @include cardTitle;
+    margin-top: 0;
+  }
+  &_personName {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 90px;
+    padding-left: 18px;
+    padding-top: 8px;
+    &--photo {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 70px;
+    }
+    &--name {
+      display: inline-block;
+      position: relative;
+      bottom: 37px;
+      left: 13px;
+      font-size: 30px;
+      font-weight: 800;
+      font-family: "Roboto", sans-serif;
+    }
+    &--onlineBox {
+      width: 45px;
+      height: 20px;
+      background-color: #04ae00;
+      color: white;
+      display: inline-block;
+      position: relative;
+      right: 129px;
+      bottom: 10px;
+      border-radius: 2px;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  &_clouds {
+    padding-bottom: 100px;
+    border-bottom: 1px solid #ddd;
+    &--first {
+      width: 175px;
+      background-color: #f5f5f5;
+      @include chatCloud;
+      &::after {
+        @include cloudTriangle;
+      }
+    }
+    &--second {
+      width: 305px;
+      background-color: #cecece;
+      @include chatCloud;
+      &::after {
+        position: absolute;
+        content: "";
+        border-style: solid;
+        display: block;
+        width: 0;
+        border-width: 12px 0px 0px 10px;
+        border-color: #cecece transparent;
+        right: 0;
+        bottom: -10px;
+      }
+    }
+    &--third {
+      width: 110px;
+      background-color: #f5f5f5;
+      @include chatCloud;
+      &::after {
+        @include cloudTriangle;
+      }
+    }
+  }
+  &_footer {
+    &--wrap {
+      display: inline-block;
+      width: 920px;
+      input {
+        width: 100%;
+        font-family: FontAwesome, "Roboto", sans-serif;
+        height: 40px;
+        border: 1px solid #ddd;
+        outline: none;
+        border-radius: 5px;
+        font-size: 14px;
+        margin: 20px 20px 0 20px;
+        padding-left: 10px;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        &::placeholder {
+          color: #aaa;
+        }
+      }
+    }
+    &--send {
+      @include wideButton;
+      font-size: 19px;
+      width: 100px;
+      float: right;
+      margin: 20px 30px 0;
+    }
+  }
+}

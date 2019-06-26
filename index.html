@@ -53,10 +53,10 @@
                     </nav>
                     <div class="messanger">
                         <p class="messanger__title">Your manager</p>
-                        <div class="messanger__contact">
+                        <div class="messanger__contact startChat">
                             <img class="messanger__contact--photo" src="images/photo.png" alt="Photo of my manager">
                             <img class="messanger__contact--online" src="images/online.png" alt="Icon of be online">
-                            <p class="messanger__contact--name">Mikhael E.</p>
+                            <p class="messanger__contact--name">Michael E.</p>
                         </div>
                     </div>
                 </div>
@@ -1109,12 +1109,29 @@
                     link</button>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
+        <div class="modal onlineChat" id="onlineChat">
+            <i class="icon-close btn-close js--close"></i>
+            <p class="onlineChat_title">Online chat with your personal manager</p>
+            <div class="onlineChat_personName">
+                <img class="onlineChat_personName--photo" src="images/photo.png" alt="Photo of my manager">
+                <p class="onlineChat_personName--name">Michael E.</p>
+                <div class="onlineChat_personName--onlineBox">online</div>
+            </div>
+            <div class="onlineChat_clouds">
+                <div class="onlineChat_clouds--first">Hello. Can I help you?</div>
+                <div class="onlineChat_clouds--second">Hello. I would like to know about Postback.</div>
+                <div class="onlineChat_clouds--third">Ok. 5 min..</div>
+            </div>
+            <div class="onlineChat_footer">
+                <div class="onlineChat_footer--wrap">
+                    <input type="text" placeholder="Enter the message..">
+                </div>
+                <button class="onlineChat_footer--send">Send</button>
+            </div>
+        </div>
     </div>
     <script src="js/script.js">
     </script>
 </body>
 
-</html>
+</html>;

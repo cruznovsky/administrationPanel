@@ -254,6 +254,8 @@ template { display: none; }
 
 .messanger__contact { position: relative; top: 0; left: 0; padding-left: 18px; padding-top: 8px; }
 
+.messanger__contact:hover { background-color: rgba(166, 166, 166, 0.1); cursor: pointer; }
+
 .messanger__contact--photo { position: relative; top: 0; left: 0; width: 45px; }
 
 .messanger__contact--online { position: absolute; left: 50px; }
@@ -574,7 +576,7 @@ template { display: none; }
 
 .modal.show { display: block; }
 
-.modal .btn-close { position: absolute; top: 0; right: 0; padding: 18px 10px 5px; color: #979797; }
+.modal .btn-close { position: absolute; top: 0; right: 0; padding: 18px 10px 5px; color: #979797; cursor: pointer; }
 
 .newLink { width: 1100px; height: 770px; }
 
@@ -747,6 +749,44 @@ template { display: none; }
 .newBanner_generator--btn2 { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 120px; height: 40px; border-radius: 5px; background-color: #f58220; color: white; font-size: 16px; font-family: "Roboto", sans-serif; margin: 30px auto 30px; outline: none; border: 1px solid #f58220; cursor: pointer; transition: background-color 0.2s ease-in; font-size: 19px; width: 100px; float: right; margin: 24px; }
 
 .newBanner_generator--btn2:hover { background-color: #ffa200; }
+
+.onlineChat { width: 1100px; height: 550px; }
+
+.onlineChat_title { color: #979797; padding: 18px; font-size: 15px; font-family: "Roboto", sans-serif; font-weight: 800; text-transform: uppercase; border-bottom: 1px solid #ddd; margin-top: 0; }
+
+.onlineChat_personName { position: relative; top: 0; left: 0; height: 90px; padding-left: 18px; padding-top: 8px; }
+
+.onlineChat_personName--photo { position: relative; top: 0; left: 0; width: 70px; }
+
+.onlineChat_personName--name { display: inline-block; position: relative; bottom: 37px; left: 13px; font-size: 30px; font-weight: 800; font-family: "Roboto", sans-serif; }
+
+.onlineChat_personName--onlineBox { width: 45px; height: 20px; background-color: #04ae00; color: white; display: inline-block; position: relative; right: 129px; bottom: 10px; border-radius: 2px; text-align: center; font-family: "Roboto", sans-serif; font-size: 14px; line-height: 20px; }
+
+.onlineChat_clouds { padding-bottom: 100px; border-bottom: 1px solid #ddd; }
+
+.onlineChat_clouds--first { width: 175px; background-color: #f5f5f5; position: relative; padding: 15px; margin: 20px; font-family: "Roboto", sans-serif; font-size: 14px; border-radius: 3px; }
+
+.onlineChat_clouds--first::after { position: absolute; content: ""; top: -10px; left: 0; border-width: 0 10px 12px 0; border-style: solid; border-color: #f5f5f5 transparent; display: block; width: 0; }
+
+.onlineChat_clouds--second { width: 305px; background-color: #cecece; position: relative; padding: 15px; margin: 20px; font-family: "Roboto", sans-serif; font-size: 14px; border-radius: 3px; }
+
+.onlineChat_clouds--second::after { position: absolute; content: ""; border-style: solid; display: block; width: 0; border-width: 12px 0px 0px 10px; border-color: #cecece transparent; right: 0; bottom: -10px; }
+
+.onlineChat_clouds--third { width: 110px; background-color: #f5f5f5; position: relative; padding: 15px; margin: 20px; font-family: "Roboto", sans-serif; font-size: 14px; border-radius: 3px; }
+
+.onlineChat_clouds--third::after { position: absolute; content: ""; top: -10px; left: 0; border-width: 0 10px 12px 0; border-style: solid; border-color: #f5f5f5 transparent; display: block; width: 0; }
+
+.onlineChat_footer--wrap { display: inline-block; width: 920px; }
+
+.onlineChat_footer--wrap input { width: 100%; font-family: FontAwesome, "Roboto", sans-serif; height: 40px; border: 1px solid #ddd; outline: none; border-radius: 5px; font-size: 14px; margin: 20px 20px 0 20px; padding-left: 10px; font-style: normal; font-weight: normal; text-decoration: inherit; }
+
+.onlineChat_footer--wrap input:-ms-input-placeholder { color: #aaa; }
+
+.onlineChat_footer--wrap input::placeholder { color: #aaa; }
+
+.onlineChat_footer--send { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 120px; height: 40px; border-radius: 5px; background-color: #f58220; color: white; font-size: 16px; font-family: "Roboto", sans-serif; margin: 30px auto 30px; outline: none; border: 1px solid #f58220; cursor: pointer; transition: background-color 0.2s ease-in; font-size: 19px; width: 100px; float: right; margin: 20px 30px 0; }
+
+.onlineChat_footer--send:hover { background-color: #ffa200; }
 
 .leftNavbar { position: -webkit-sticky; position: sticky; top: 0; height: 100vh; background-color: #111; }
 
