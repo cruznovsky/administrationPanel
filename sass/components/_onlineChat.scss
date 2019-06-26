@@ -81,6 +81,7 @@
   }
   &_footer {
     &--wrap {
+      position: relative;
       display: inline-block;
       width: 920px;
       input {
@@ -92,13 +93,20 @@
         border-radius: 5px;
         font-size: 14px;
         margin: 20px 20px 0 20px;
-        padding-left: 10px;
+        padding-left: 40px;
         font-style: normal;
         font-weight: normal;
         text-decoration: inherit;
         &::placeholder {
           color: #aaa;
         }
+      }
+      .messageIcon {
+        position: absolute;
+        color: #aaa;
+        width: 20px;
+        top: 32px;
+        left: 30px;
       }
     }
     &--send {

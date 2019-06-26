@@ -68,11 +68,11 @@
                         <p class="topNavbar__wallet--cash">$1,500.00</p>
                         <i class="icon-arrow-down icon iconArrowDown"></i>
                     </div>
-                    <div class="topNavbar__notification" id="modalTest">
+                    <div class="topNavbar__notification">
                         <i class="icon-notification iconNotification""></i>
                         <img class=" notification-indicator" src="images/indicator.png" alt="Indicator">
                     </div>
-                    <div class="topNavbar__profile">
+                    <div class="topNavbar__profile" id="startLogin">
                         <i class="icon-profile icon iconProfile"></i>
                         <p class="topNavbar__profile--name">Leonardo Dicaprio</p>
                     </div>
@@ -1124,14 +1124,25 @@
             </div>
             <div class="onlineChat_footer">
                 <div class="onlineChat_footer--wrap">
+                    <i class="icon-message messageIcon"></i>
                     <input type="text" placeholder="Enter the message..">
                 </div>
                 <button class="onlineChat_footer--send">Send</button>
             </div>
         </div>
-    </div>
-    <script src="js/script.js">
-    </script>
+        <div class="modal login" id="login">
+            <i class="icon-close btn-close js--close"></i>
+            <p class="login_title">Login</p>
+            <div class="login_fields">
+                <i class="icon-login loginIcon"></i>
+                <input type="text" placeholder="login name">
+                <i class="icon-password passwordIcon"></i>
+                <input type="password" placeholder="password">
+                <button class="login_fields--btn">Enter</button>
+            </div>
+        </div>
+        <script src="js/script.js">
+        </script>
 </body>
 
 </html>;

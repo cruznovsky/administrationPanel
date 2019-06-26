@@ -33,6 +33,7 @@ document.addEventListener('keyup', function (e) {
 var newLink = document.getElementsByClassName('addNewLink');
 var newBanner = document.getElementsByClassName('addNewBanner');
 var onlineChat = document.getElementsByClassName('startChat');
+var login = document.getElementById('startLogin');
 
 newLink[0].addEventListener('click', function () {
     openModal('#newLink');
@@ -50,4 +51,8 @@ newBanner[1].addEventListener('click', function () {
 
 onlineChat[0].addEventListener('click', function () {
     openModal('#onlineChat');
+});
+
+login.addEventListener('click', function () {
+    openModal('#login');
 });

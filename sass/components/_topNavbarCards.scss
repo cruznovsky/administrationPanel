@@ -66,6 +66,10 @@
       font-size: $topNavbar-profile-name-size;
       font-weight: 500;
     }
+    &:hover {
+      background-color: #e3e3e3;
+      cursor: pointer;
+    }
   }
   .topNavbar__exit {
     display: -ms-flexbox;

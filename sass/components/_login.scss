@@ -1,0 +1,50 @@
+.login {
+  width: 720px;
+  height: 190px;
+  &_title {
+    @include cardTitle;
+    margin-top: 0;
+  }
+  &_fields {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 69px);
+    input {
+      font-family: "Roboto", sans-serif;
+      height: 40px;
+      border: 1px solid #ddd;
+      outline: none;
+      border-radius: 5px;
+      font-size: 14px;
+      margin: -20px 20px 0 20px;
+      padding-left: 40px;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+    &--btn {
+      @include wideButton;
+      width: 180px;
+      margin: 10px auto 30px;
+    }
+    .loginIcon {
+      position: absolute;
+      color: #aaa;
+      width: 20px;
+      top: 41px;
+      left: 32px;
+    }
+    .passwordIcon {
+      position: absolute;
+      color: #aaa;
+      width: 20px;
+      top: 41px;
+      left: 274px;
+    }
+  }
+}
