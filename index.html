@@ -76,7 +76,7 @@
                         <i class="icon-profile icon iconProfile"></i>
                         <p class="topNavbar__profile--name">Leonardo Dicaprio</p>
                     </div>
-                    <div class="topNavbar__exit">
+                    <div class="topNavbar__exit" id="startExit">
                         <i class="icon-quit iconQuit"></i>
                     </div>
                 </div>
@@ -1141,8 +1141,17 @@
                 <button class="login_fields--btn">Enter</button>
             </div>
         </div>
-        <script src="js/script.js">
-        </script>
+        <div class="modal exit" id="exit">
+            <i class="icon-close btn-close js--close"></i>
+            <p class="login_title">Do you really want to Quit?</p>
+            <div class="exit_btns">
+                <button class="exit_btns--btn1">Cancel</button>
+                <button class="exit_btns--btn2">Quit</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js">
+    </script>
 </body>
 
 </html>;

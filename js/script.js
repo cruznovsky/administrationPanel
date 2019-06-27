@@ -34,6 +34,7 @@ var newLink = document.getElementsByClassName('addNewLink');
 var newBanner = document.getElementsByClassName('addNewBanner');
 var onlineChat = document.getElementsByClassName('startChat');
 var login = document.getElementById('startLogin');
+var exit = document.getElementById('startExit');
 
 newLink[0].addEventListener('click', function () {
     openModal('#newLink');
@@ -55,4 +56,8 @@ onlineChat[0].addEventListener('click', function () {
 
 login.addEventListener('click', function () {
     openModal('#login');
+});
+
+exit.addEventListener('click', function () {
+    openModal('#exit');
 });

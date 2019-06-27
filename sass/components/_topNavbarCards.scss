@@ -53,6 +53,7 @@
     align-items: center;
     width: 175px;
     border-right: 1px solid $topNavbar-borders-color;
+    transition: 0.3s;
     .iconProfile {
       color: $topNavbar-icons-color;
       font-size: $topNavbar-profile-iconProfile-size;
@@ -79,9 +80,14 @@
     justify-content: center;
     width: 60px;
     border-right: 1px solid $topNavbar-borders-color;
+    transition: 0.3s;
     .iconQuit {
       color: $topNavbar-icons-color;
       font-size: $topNavbar-exit-iconQuit-size;
+    }
+    &:hover {
+      background-color: #e3e3e3;
+      cursor: pointer;
     }
   }
 }

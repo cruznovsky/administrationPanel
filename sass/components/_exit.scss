@@ -1,0 +1,26 @@
+.exit {
+  width: 360px;
+  height: 160px;
+  &_title {
+    @include cardTitle;
+    margin-top: 0;
+  }
+  &_btns {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    &--btn1 {
+      @include wideButton;
+      margin: 0;
+      background-color: #979797;
+      border-color: #979797;
+      &:hover {
+        background-color: #b1b0b0;
+      }
+    }
+    &--btn2 {
+      @include wideButton;
+      margin: 0;
+    }
+  }
+}
