@@ -2,6 +2,8 @@
 /* Font sizes */
 /* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+.cardHide { display: none; }
+
 body { background-color: #f5f5f2; }
 
 select { -webkit-appearance: none; -moz-appearance: none; appearance: none; font-family: 'Roboto', sans-serif; color: #aaa; padding: 5px 30px 5px 10px; font-size: 14px; display: block; border-radius: 0; background-image: url(https://image.flaticon.com/icons/png/128/118/118738.png); background-size: 15px auto; background-repeat: no-repeat; background-position: right 5px center; }
@@ -272,6 +274,8 @@ template { display: none; }
 
 .topNavbar__wallet .iconArrowDown { color: #8c8c8c; font-size: 12px; }
 
+.topNavbar__wallet:hover { background-color: #e3e3e3; cursor: pointer; }
+
 .topNavbar .topNavbar__notification { position: relative; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; width: 60px; border-right: 1px solid #ddd; transition: 0.3s; }
 
 .topNavbar .topNavbar__notification .iconNotification { color: #8c8c8c; font-size: 18px; }
@@ -302,15 +306,15 @@ template { display: none; }
 
 .general .general-wrap .general_dates { display: inline-block; height: 44px; width: 325px; border: 1px solid #ddd; border-radius: 5px; font-family: "Roboto", sans-serif; font-size: 14px; }
 
-.general .general-wrap .general_dates:hover { border: 1px solid black; }
+.general .general-wrap .general_dates:hover { border: 1px solid #979797; }
 
-.general .general-wrap .general_dates:hover .iconCalendar { color: black; }
+.general .general-wrap .general_dates:hover .iconCalendar { color: #979797; }
 
 .general .general-wrap .general_dates .general_dates--firstDate { float: left; padding-left: 18px; }
 
 .general .general-wrap .general_dates .general_dates--secondDate { float: left; padding-left: 18px; border-left: 1px solid #ddd; }
 
-.general .general-wrap .general_dates .iconCalendar { margin-top: 14px; font-size: 13px; color: #9c9c9c; float: right; padding-left: 18px; padding-right: 18px; }
+.general .general-wrap .general_dates .iconCalendar { margin-top: 14px; font-size: 13px; color: #e3e3e3; float: right; padding-left: 18px; padding-right: 18px; }
 
 .general .general-wrap .general_dates--button { float: right; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 44px; height: 44px; background-color: #f58220; border-radius: 5px; padding-top: 5px; margin-left: 20px; outline: none; border: 1px solid #f58220; cursor: pointer; transition: background-color 0.2s ease-in; }
 
@@ -332,7 +336,9 @@ template { display: none; }
 
 .general .general_data .general_chart { margin-top: 40px; }
 
-.general .general_data .general_chart--title { font-size: 15px; font-family: "Roboto", sans-serif; color: #979797; font-weight: 800; letter-spacing: 1px; }
+.general .general_data .general_chart--title { font-size: 15px; font-family: "Roboto", sans-serif; color: #979797; font-weight: 800; letter-spacing: 1px; padding-top: 20px; }
+
+.general .general_data .myChart { margin-top: 40px; }
 
 .links_title { color: #979797; padding: 18px; font-size: 15px; font-family: "Roboto", sans-serif; font-weight: 800; text-transform: uppercase; border-bottom: 1px solid #ddd; }
 
@@ -342,13 +348,23 @@ template { display: none; }
 
 .links_table { width: 680px; margin: 0 auto; border-collapse: collapse; }
 
+.links_table--iconTrash { opacity: 0; }
+
+.links_table--iconLinks { margin-right: 10px; opacity: 0; }
+
+.links_table tr:hover { background-color: #e3e3e3; cursor: pointer; }
+
+.links_table tr:hover .links_table--iconLinks { opacity: 1; color: #f58220; }
+
+.links_table tr:hover .links_table--iconTrash { color: #979797; opacity: 1; }
+
 .links_table td { padding-top: 18px; padding-bottom: 18px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
 
 .links_table--names { color: #979797; font-weight: 800; font-family: "Roboto", sans-serif; padding-left: 16px; }
 
 .links_table a { padding-left: 140px; text-decoration: none; font-family: "Roboto", sans-serif; color: #56819f; }
 
-.links_secondButton { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 120px; height: 40px; border-radius: 5px; background-color: #f58220; color: white; font-size: 16px; font-family: "Roboto", sans-serif; margin: 30px auto 30px; outline: none; border: 1px solid #f58220; cursor: pointer; transition: background-color 0.2s ease-in; }
+.links_secondButton { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 120px; height: 40px; border-radius: 5px; background-color: #f58220; color: white; font-size: 16px; font-family: "Roboto", sans-serif; margin: 30px auto 30px; outline: none; border: 1px solid #f58220; cursor: pointer; transition: background-color 0.2s ease-in; margin: 18px auto 30px; }
 
 .links_secondButton:hover { background-color: #ffa200; }
 
@@ -359,6 +375,16 @@ template { display: none; }
 .banners_firstButton:hover { background-color: #ffa200; }
 
 .banners_table { width: 680px; margin: 0 auto; border-collapse: collapse; }
+
+.banners_table--iconTrash { position: absolute; right: 3%; top: 17px; opacity: 0; }
+
+.banners_table--iconLinks { position: absolute; right: 9%; top: 19px; opacity: 0; }
+
+.banners_table tr:hover { background-color: #e3e3e3; cursor: pointer; }
+
+.banners_table tr:hover .links_table--iconLinks { opacity: 1; color: #f58220; }
+
+.banners_table tr:hover .links_table--iconTrash { color: #979797; opacity: 1; }
 
 .banners_table td { padding-top: 18px; padding-bottom: 18px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
 
@@ -422,11 +448,15 @@ template { display: none; }
 
 .details-wrap .details_dates { display: inline-block; height: 44px; width: 325px; border: 1px solid #ddd; border-radius: 5px; font-family: "Roboto", sans-serif; font-size: 14px; }
 
+.details-wrap .details_dates:hover { border: 1px solid #979797; }
+
+.details-wrap .details_dates:hover .iconCalendar { color: #979797; }
+
 .details-wrap .details_dates .details_dates--firstDate { float: left; padding-left: 18px; }
 
 .details-wrap .details_dates .details_dates--secondDate { float: left; padding-left: 18px; border-left: 1px solid #ddd; }
 
-.details-wrap .details_dates .iconCalendar { margin-top: 14px; font-size: 13px; color: #9c9c9c; float: right; padding-left: 18px; padding-right: 18px; }
+.details-wrap .details_dates .iconCalendar { margin-top: 14px; font-size: 13px; color: #e3e3e3; float: right; padding-left: 18px; padding-right: 18px; }
 
 .details-wrap .details_dates--button { float: right; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 44px; height: 44px; background-color: #f58220; border-radius: 5px; padding-top: 5px; margin-left: 20px; outline: none; border: 1px solid #f58220; cursor: pointer; transition: background-color 0.2s ease-in; }
 
@@ -437,6 +467,14 @@ template { display: none; }
 .details_table { width: 98%; border-collapse: collapse; margin: 40px auto 0; }
 
 .details_table thead tr th { text-align: start; padding-bottom: 20px; font-size: 15px; font-family: "Roboto", sans-serif; color: #979797; font-weight: 800; letter-spacing: 1px; margin-right: 140px; margin-right: 0; font-size: 14px; border-bottom: 1px solid #ddd; }
+
+.details_table thead tr th .iconSmallArrow { visibility: hidden; }
+
+.details_table thead tr th .details_table--titles:hover { color: black; background-color: #e3e3e3; cursor: pointer; }
+
+.details_table thead tr th .details_table--titles:hover .iconSmallArrow { font-size: 10px; visibility: visible; color: #979797; }
+
+.details_table thead tr th div { display: inline-block; }
 
 .details_table tbody tr td { padding: 20px 0; border-bottom: 1px solid #ddd; font-family: "Roboto", sans-serif; font-size: 14px; }
 
@@ -458,11 +496,15 @@ template { display: none; }
 
 .payout-wrap .payout_dates { display: inline-block; height: 44px; width: 325px; border: 1px solid #ddd; border-radius: 5px; font-family: "Roboto", sans-serif; font-size: 14px; }
 
+.payout-wrap .payout_dates:hover { border: 1px solid #979797; }
+
+.payout-wrap .payout_dates:hover .iconCalendar { color: #979797; }
+
 .payout-wrap .payout_dates .payout_dates--firstDate { float: left; padding-left: 18px; }
 
 .payout-wrap .payout_dates .payout_dates--secondDate { float: left; padding-left: 18px; border-left: 1px solid #ddd; }
 
-.payout-wrap .payout_dates .iconCalendar { margin-top: 14px; font-size: 13px; color: #9c9c9c; float: right; padding-left: 18px; padding-right: 18px; }
+.payout-wrap .payout_dates .iconCalendar { margin-top: 14px; font-size: 13px; color: #e3e3e3; float: right; padding-left: 18px; padding-right: 18px; }
 
 .payout-wrap .payout_dates--button { float: right; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 44px; height: 44px; background-color: #f58220; border-radius: 5px; padding-top: 5px; margin-left: 20px; outline: none; border: 1px solid #f58220; cursor: pointer; transition: background-color 0.2s ease-in; }
 
@@ -479,6 +521,14 @@ template { display: none; }
 .payout_table thead tr th:nth-child(2) { width: 320px; }
 
 .payout_table thead tr th:nth-child(3) { width: 250px; }
+
+.payout_table thead tr th .iconSmallArrow { visibility: hidden; }
+
+.payout_table thead tr th .payout_table--titles:hover { color: black; background-color: #e3e3e3; cursor: pointer; }
+
+.payout_table thead tr th .payout_table--titles:hover .iconSmallArrow { font-size: 10px; visibility: visible; color: #979797; }
+
+.payout_table thead tr th div { display: inline-block; }
 
 .payout_table tbody tr td { padding: 20px 0; border-bottom: 1px solid #ddd; font-family: "Roboto", sans-serif; font-size: 14px; }
 
@@ -544,11 +594,11 @@ template { display: none; }
 
 .postback_secondSection--form .notStatuses--fourth { margin-bottom: 0; padding-bottom: 20px; }
 
-.postback_secondSection .scrollbar { position: relative; top: 15%; width: 15px; height: 150px; background-color: #e3e3e3; float: right; margin-top: 20px; margin-right: 30px; }
+.postback_secondSection .rightBorder { max-height: 250px; overflow: auto; border-right: 1px solid #ddd; }
 
-.postback_secondSection .scrollbar::after { position: relative; content: ""; top: 63%; width: 15px; height: 55px; background-color: #979797; float: right; }
+.postback_secondSection .rightBorder::-webkit-scrollbar { width: 15px; background-color: #e3e3e3; margin-right: 20px; }
 
-.postback_secondSection .rightBorder { border-right: 1px solid #ddd; }
+.postback_secondSection .rightBorder::-webkit-scrollbar-thumb { background-color: #979797; }
 
 .postback_secondSection .rightSide { position: relative; }
 

@@ -5,10 +5,30 @@
   &_firstButton {
     @include wideButton;
   }
+
   &_table {
     width: 680px;
     margin: 0 auto;
     border-collapse: collapse;
+    &--iconTrash {
+      opacity: 0;
+    }
+    &--iconLinks {
+      margin-right: 10px;
+      opacity: 0;
+    }
+    tr:hover {
+      background-color: #e3e3e3;
+      cursor: pointer;
+      .links_table--iconLinks {
+        opacity: 1;
+        color: #f58220;
+      }
+      .links_table--iconTrash {
+        color: #979797;
+        opacity: 1;
+      }
+    }
     td {
       padding-top: 18px;
       padding-bottom: 18px;
@@ -30,5 +50,6 @@
   }
   &_secondButton {
     @include wideButton;
+    margin: 18px auto 30px;
   }
 }

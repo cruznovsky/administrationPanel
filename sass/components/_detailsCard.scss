@@ -16,6 +16,12 @@
       border-radius: 5px;
       font-family: $generalStatistic-dates-font;
       font-size: $generalStatistic-dates-size;
+      &:hover {
+        border: 1px solid #979797;
+        .iconCalendar {
+          color: #979797;
+        }
+      }
       .details_dates--firstDate {
         float: left;
         padding-left: 18px;
@@ -70,6 +76,22 @@
           margin-right: 0;
           font-size: 14px;
           border-bottom: 1px solid $details-table-border-color;
+          .iconSmallArrow {
+            visibility: hidden;
+          }
+          .details_table--titles:hover {
+            color: black;
+            background-color: #e3e3e3;
+            cursor: pointer;
+            .iconSmallArrow {
+              font-size: 10px;
+              visibility: visible;
+              color: #979797;
+            }
+          }
+          div {
+            display: inline-block;
+          }
         }
       }
     }

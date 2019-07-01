@@ -22,31 +22,32 @@
                     <nav class="navbar">
                         <ul class="leftNavbar__menu">
                             <li class="leftNavbar__menu--item">
-                                <a class="leftNavbar__menu--item-link" href="#"><i
+                                <a class="leftNavbar__menu--item-link" id="generalMenu" href="#"><i
                                         class="icon-general icon"></i>General</a>
                             </li>
                             <li class="leftNavbar__menu--item">
-                                <a class="leftNavbar__menu--item-link" href="#"><i
+                                <a class="leftNavbar__menu--item-link" id="detailsMenu" href="#"><i
                                         class="icon-details icon"></i>Details</a>
                             </li>
                             <li class="leftNavbar__menu--item">
-                                <a class="leftNavbar__menu--item-link" href="#"><i class="icon-links icon"></i>Links</a>
+                                <a class="leftNavbar__menu--item-link" id="linksMenu" href="#"><i
+                                        class="icon-links icon"></i>Links</a>
                             </li>
                             <li class="leftNavbar__menu--item">
-                                <a class="leftNavbar__menu--item-link" href="#"><i
+                                <a class="leftNavbar__menu--item-link" id="bannerMenu" href="#"><i
                                         class="icon-banners icon"></i>Banners</a>
                             </li>
                             <li class="leftNavbar__menu--item">
-                                <a class="leftNavbar__menu--item-link" href="#"><i
+                                <a class="leftNavbar__menu--item-link" id="personalMenu" href="#"><i
                                         class="icon-personaldata icon"></i>Personal
                                     data</a>
                             </li>
                             <li class="leftNavbar__menu--item">
-                                <a class="leftNavbar__menu--item-link" href="#"><i
+                                <a class="leftNavbar__menu--item-link" id="payoutMenu" href="#"><i
                                         class="icon-payout icon"></i>Payout</a>
                             </li>
                             <li class="leftNavbar__menu--item">
-                                <a class="leftNavbar__menu--item-link" href="#"><i
+                                <a class="leftNavbar__menu--item-link" id="postbackMenu" href="#"><i
                                         class="icon-postback icon"></i>Postback</a>
                             </li>
                         </ul>
@@ -80,7 +81,7 @@
                         <i class="icon-quit iconQuit"></i>
                     </div>
                 </div>
-                <div class="general">
+                <div class="general hider" id="general">
                     <p class="general_title">General statistic</p>
                     <div class="general-wrap">
                         <div class="general_dates">
@@ -119,13 +120,15 @@
                                         Over</span><span class="numberGoEnd">432</span></p>
                             </div>
                         </div>
-                        <div class="general_chart">
+                        <p class="general_chart--title">Earnings chart</p>
+                        <canvas id="myChart"></canvas>
+                        <!-- <div class="general_chart">
                             <p class="general_chart--title">Earnings chart</p>
                             <img src="images/graph.png" alt="Chart">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="links">
+                <div class="links hider cardHide" id="links">
                     <p class="links_title">Links</p>
                     <button class="links_firstButton addNewLink">+ add new</button>
                     <table class="links_table">
@@ -133,48 +136,68 @@
                             <tr>
                                 <td class="links_table--names">Home page</td>
                                 <td><a href="#">https://www.homepage.com</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="links_table--names">Currently offer</td>
                                 <td><a href="#">https://www.currently.com</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="links_table--names">Blurpix</td>
                                 <td><a href="#">https://www.blurpix.com</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="links_table--names">Your Site</td>
                                 <td><a href="#">https://www.yoursite.com</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="links_table--names">Google</td>
                                 <td><a href="#">https://www.google.com</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="links_table--names">Facebook</td>
                                 <td><a href="#">https://www.facebook.com</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="links_table--names">Dashboard</td>
                                 <td><a href="#">https://www.dashboard.com</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="links_table--names">Blurax</td>
                                 <td><a href="#">https://www.blurax.com</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="links_table--names">Piece of Wine</td>
                                 <td><a href="#">https://www.pieceofwine.com</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="links_table--names">Twitter</td>
                                 <td><a href="#">https://www.twitter.com</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                         </tbody>
                     </table>
                     <button class="links_secondButton addNewLink">+ add new</button>
                 </div>
-                <div class="banners">
+                <div class="banners hider cardHide" id="banner">
                     <p class="banners_title">Banners</p>
                     <button class="banners_firstButton addNewBanner">+ add new</button>
                     <table class="banners_table">
@@ -182,32 +205,44 @@
                             <tr>
                                 <td class="banners_table--names">Banner main</td>
                                 <td><a href="#">https://www.website.com/bannermain.gif</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="banners_table--names">Sign up banner</td>
                                 <td><a href="#">https://www.website.com/signup.gif</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="banners_table--names">Banner left side</td>
                                 <td><a href="#">https://www.website.com/leftside.gif</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="banners_table--names">Vertical banner</td>
                                 <td><a href="#">https://www.website.com/vert.gif</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="banners_table--names">Front banner</td>
                                 <td><a href="#">https://www.website.com/front.gif</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                             <tr>
                                 <td class="banners_table--names">Horizontal banner</td>
                                 <td><a href="#">https://www.website.com/horizontal.gif</a></td>
+                                <td><i class="icon-links links_table--iconLinks"></i><i
+                                        class="icon-trash links_table--iconTrash"></i></td>
                             </tr>
                         </tbody>
                     </table>
                     <button class="banners_secondButton addNewBanner">+ add new</button>
                 </div>
-                <div class="personalData">
+                <div class="personalData hider cardHide" id="personal">
                     <p class="personalData_title">Personal data</p>
                     <div class="personalData_first">
                         <form class="personalData_first--form" action="#">
@@ -267,7 +302,7 @@
                     </div>
                     <button class="personalData_button">Save</button>
                 </div>
-                <div class="details">
+                <div class="details hider cardHide" id="details">
                     <p class="details_title">Detail statistic</p>
                     <div class="details-wrap">
                         <div class="details_dates">
@@ -288,17 +323,50 @@
                     <table class="details_table">
                         <thead>
                             <tr>
-                                <th>Tracker name</th>
-                                <th>Initiated date</th>
-                                <th>Visits</th>
-                                <th>Unique</th>
-                                <th>Signups</th>
-                                <th>FTD</th>
-                                <th>Depositors</th>
-                                <th>Deposits ($)</th>
-                                <th>Payout ($)</th>
-                                <th>Turnover</th>
-                                <th>Deal</th>
+                                <th>
+                                    <div class="details_table--titles">Tracker name <i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
+                                <th>
+                                    <div class="details_table--titles">Initiated date<i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
+                                <th>
+                                    <div class="details_table--titles">Visits<i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
+                                <th>
+                                    <div class="details_table--titles">Unique<i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
+                                <th>
+                                    <div class="details_table--titles">Signups<i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
+                                <th>
+                                    <div class="details_table--titles">FTD<i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
+                                <th>
+                                    <div class="details_table--titles">Depositors<i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
+                                <th>
+                                    <div class="details_table--titles">Deposits ($)<i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
+                                <th>
+                                    <div class="details_table--titles">Payout ($)<i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
+                                <th>
+                                    <div class="details_table--titles">Turnover<i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
+                                <th>
+                                    <div class="details_table--titles">Deal<i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -411,8 +479,7 @@
                     <div class="details_pagination">
                         <ul class="details_pagination--list">
                             <li><a href="#">
-                                </a> </li>
-                            <li><a class="active" href="#">1</a></li>
+                                    < </a> </li> <li><a class="active" href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
@@ -425,7 +492,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="payout">
+                <div class="payout hider cardHide" id="payout">
                     <p class="payout_title">Payout history</p>
                     <div class="payout-wrap">
                         <div class="payout_dates">
@@ -446,10 +513,22 @@
                     <table class="payout_table">
                         <thead>
                             <tr>
-                                <th>Date</th>
-                                <th>Amount</th>
-                                <th>Deal</th>
-                                <th>Account</th>
+                                <th>
+                                    <div class="payout_table--titles">Date <i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
+                                <th>
+                                    <div class="payout_table--titles">Amount <i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
+                                <th>
+                                    <div class="payout_table--titles">Deal <i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
+                                <th>
+                                    <div class="payout_table--titles">Account <i
+                                            class="icon-arrow-up-small iconSmallArrow"></i></div>
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -506,8 +585,7 @@
                     <div class="payout_pagination">
                         <ul class="payout_pagination--list">
                             <li><a href="#">
-                                </a> </li>
-                            <li><a class="active" href="#">1</a></li>
+                                    < </a> </li> <li><a class="active" href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
@@ -520,7 +598,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="postback">
+                <div class="postback hider cardHide" id="postback">
                     <p class="postback_title">New postback</p>
                     <div class="postback_firstSection">
                         <p class="postback_firstSection--information">You can insert some parameters in this postback:
@@ -591,8 +669,27 @@
                                         <span class="checkbox-custom"></span>
                                         <label>callAgain</label>
                                     </div>
+                                    <div class="notStatuses--first">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <label>checkNumber</label>
+                                    </div>
+                                    <div class="notStatuses--first">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <label>checkNumber</label>
+                                    </div>
+                                    <div class="notStatuses--first">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <label>checkNumber</label>
+                                    </div>
+                                    <div class="notStatuses--first">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <label>checkNumber</label>
+                                    </div>
                                 </form>
-                                <div class="scrollbar"></div>
                             </div>
                             <div class="col-xl-6 rightSide">
                                 <p>Send after:</p>
@@ -607,7 +704,6 @@
                     <div class="postback_wrap">
                         <button class="postback_button">Create pixel</button>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -1150,6 +1246,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js">
     </script>
 </body>

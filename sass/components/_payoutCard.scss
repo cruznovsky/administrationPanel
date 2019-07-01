@@ -16,6 +16,12 @@
       border-radius: 5px;
       font-family: $generalStatistic-dates-font;
       font-size: $generalStatistic-dates-size;
+      &:hover {
+        border: 1px solid #979797;
+        .iconCalendar {
+          color: #979797;
+        }
+      }
       .payout_dates--firstDate {
         float: left;
         padding-left: 18px;
@@ -78,6 +84,22 @@
           }
           &:nth-child(3) {
             width: 250px;
+          }
+          .iconSmallArrow {
+            visibility: hidden;
+          }
+          .payout_table--titles:hover {
+            color: black;
+            background-color: #e3e3e3;
+            cursor: pointer;
+            .iconSmallArrow {
+              font-size: 10px;
+              visibility: visible;
+              color: #979797;
+            }
+          }
+          div {
+            display: inline-block;
           }
         }
       }

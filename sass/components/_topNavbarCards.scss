@@ -25,6 +25,10 @@
       color: $topNavbar-icons-color;
       font-size: $topNavbar-wallet-iconArrowDown-size;
     }
+    &:hover {
+      background-color: #e3e3e3;
+      cursor: pointer;
+    }
   }
   .topNavbar__notification {
     position: relative;

@@ -17,9 +17,9 @@
       font-family: $generalStatistic-dates-font;
       font-size: $generalStatistic-dates-size;
       &:hover {
-        border: 1px solid black;
+        border: 1px solid #979797;
         .iconCalendar {
-          color: black;
+          color: #979797;
         }
       }
       .general_dates--firstDate {
@@ -84,7 +84,11 @@
       margin-top: 40px;
       &--title {
         @include chartTitle;
+        padding-top: 20px;
       }
+    }
+    .myChart {
+      margin-top: 40px;
     }
   }
 }

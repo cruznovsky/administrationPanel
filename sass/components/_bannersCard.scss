@@ -9,6 +9,30 @@
     width: 680px;
     margin: 0 auto;
     border-collapse: collapse;
+    &--iconTrash {
+      position: absolute;
+      right: 3%;
+      top: 17px;
+      opacity: 0;
+    }
+    &--iconLinks {
+      position: absolute;
+      right: 9%;
+      top: 19px;
+      opacity: 0;
+    }
+    tr:hover {
+      background-color: #e3e3e3;
+      cursor: pointer;
+      .links_table--iconLinks {
+        opacity: 1;
+        color: #f58220;
+      }
+      .links_table--iconTrash {
+        color: #979797;
+        opacity: 1;
+      }
+    }
     td {
       padding-top: 18px;
       padding-bottom: 18px;
