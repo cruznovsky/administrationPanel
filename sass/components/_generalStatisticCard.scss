@@ -69,10 +69,12 @@
       margin-right: 60px;
       .general_data--visit {
         @include data;
+        margin-right: 0;
       }
     }
     &--deposit {
       @include data;
+      margin-right: 0;
     }
     &--border {
       @include dataBorder;

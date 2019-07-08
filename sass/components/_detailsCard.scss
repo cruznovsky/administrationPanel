@@ -63,45 +63,52 @@
       }
     }
   }
-  &_table {
-    width: 98%;
-    border-collapse: collapse;
-    margin: 40px auto 0;
-    thead {
-      tr {
-        th {
-          text-align: start;
-          padding-bottom: 20px;
-          @include data;
-          margin-right: 0;
-          font-size: 14px;
-          border-bottom: 1px solid $details-table-border-color;
-          .iconSmallArrow {
-            visibility: hidden;
-          }
-          .details_table--titles:hover {
-            color: black;
-            background-color: #e3e3e3;
-            cursor: pointer;
+  .scroll-wrapper {
+    overflow-x: auto;
+    max-height: 540px;
+    .details_table {
+      width: 98%;
+      border-collapse: collapse;
+      margin: 40px auto 0;
+      thead {
+        tr {
+          th {
+            text-align: start;
+            padding-bottom: 20px;
+            @include data;
+            margin-right: 0;
+            font-size: 14px;
+            border-bottom: 1px solid $details-table-border-color;
             .iconSmallArrow {
-              font-size: 10px;
-              visibility: visible;
-              color: #979797;
+              visibility: hidden;
             }
-          }
-          div {
-            display: inline-block;
+            .details_table--titles:hover {
+              color: black;
+              background-color: #e3e3e3;
+              cursor: pointer;
+              .iconSmallArrow {
+                font-size: 10px;
+                visibility: visible;
+                color: #979797;
+              }
+            }
+            div {
+              display: inline-block;
+            }
           }
         }
       }
-    }
-    tbody {
-      tr {
-        td {
-          padding: 20px 0;
-          border-bottom: 1px solid $details-table-border-color;
-          font-family: $details-table-font;
-          font-size: $details-table-size;
+      tbody {
+        tr {
+          &:hover {
+            background-color: #e3e3e3;
+          }
+          td {
+            padding: 20px 0;
+            border-bottom: 1px solid $details-table-border-color;
+            font-family: $details-table-font;
+            font-size: $details-table-size;
+          }
         }
       }
     }

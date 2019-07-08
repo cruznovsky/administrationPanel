@@ -18,7 +18,7 @@
     &--form {
       .firstLineForm {
         display: flex;
-        width: 96%;
+        justify-content: center;
         margin-left: 20px;
         label {
           color: #979797;
@@ -26,7 +26,7 @@
           font-family: "Roboto", sans-serif;
         }
         textarea {
-          width: 485px;
+          width: 100%;
           height: 190px;
           border-radius: 5px;
           border: 1px solid #ddd;
@@ -49,12 +49,16 @@
       }
       .secondLineForm {
         display: flex;
-        justify-content: space-around;
-        width: 100%;
+        justify-content: center;
         margin-top: 20px;
+
         div {
           width: 320px;
           font-family: "Roboto", sans-serif;
+          margin-right: 20px;
+        }
+        .typeForm {
+          margin-left: 20px;
         }
         select {
           width: 100%;
@@ -103,33 +107,24 @@
           font-size: 15px;
         }
         input {
-          width: 15px;
-          height: 15px;
-          background-color: white;
-          border-color: #ddd;
-          opacity: 0;
-        }
-        .checkbox-custom {
           position: absolute;
-          top: 2px;
-          left: 30px;
-          height: 18px;
           width: 18px;
-          background-color: #fff;
-          border-radius: 1px;
-          border: 1px solid #ddd;
-          &::after {
-            position: absolute;
-            content: "";
-            top: 18px;
-            left: 18px;
-            height: 0px;
-            width: 0px;
-            border-radius: 3px;
-            border: solid blue;
-            border-width: 0 3px 3px 0;
-            transform: rotate(0deg) scale(0);
-            opacity: 1;
+          height: 18px;
+          opacity: 0;
+          + .checkbox-custom {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #ddd;
+            .checkIcon {
+              font-size: 12px;
+              color: white;
+            }
+          }
+          &:checked + .checkbox-custom {
+            display: inline-block;
+            text-align: center;
+            background-color: #04ae00 !important;
           }
         }
       }
@@ -153,53 +148,39 @@
     }
     .rightSide {
       position: relative;
-      p {
-        &:nth-child(1) {
-          font-family: "Roboto";
-          color: #979797;
-          font-weight: 800;
-          padding-left: 20px;
-        }
-        &:nth-child(2) {
-          display: inline-block;
-          float: left;
-          color: #979797;
-          margin-left: 20px;
-        }
-        &:nth-child(3) {
-          display: inline-block;
-          float: right;
-          color: #979797;
-          margin-right: 20px;
-        }
+      &_title {
+        font-family: "Roboto";
+        color: #979797;
+        font-weight: 800;
+        margin-left: 20px;
+        margin-top: 24px;
       }
-      .hours {
-        position: absolute;
-        top: 54%;
-        left: 58%;
-        font-family: "Roboto", sans-serif;
-        font-size: 15px;
-      }
-      .bar {
-        position: relative;
-        top: 17%;
-        left: 3%;
-        width: 480px;
-        height: 8px;
-        background-color: #e3e3e3;
-        &::after {
-          display: block;
-          content: "";
-          top: 8%;
-          width: 320px;
-          height: 8px;
-          background-color: #f58220;
+      &_scrollbar {
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+        input {
+          -webkit-appearance: none;
+          height: 5px;
+          width: 95%;
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            border-width: 0 16px 18px 16px;
+            border-style: solid;
+            border-color: #f58220 transparent;
+            display: block;
+            width: 0;
+            cursor: pointer;
+            margin-top: 8px;
+          }
+          &::-webkit-slider-runnable-track {
+            height: 5px;
+            background: #ddd;
+          }
+          &:focus {
+            outline: none;
+          }
         }
-      }
-      img {
-        position: absolute;
-        top: 45%;
-        left: 61%;
       }
     }
   }
@@ -208,7 +189,7 @@
     justify-content: flex-end;
     .postback_button {
       @include wideButton;
-      margin: 30px 30px 0 0;
+      margin: 16px 30px 0 0;
     }
   }
 }

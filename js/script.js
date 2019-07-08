@@ -119,14 +119,6 @@ var payoutMenu = document.getElementById('payoutMenu');
 var postbackMenu = document.getElementById('postbackMenu');
 
 
-var test = document.querySelectorAll('hider');
-var testowo = document.querySelectorAll('leftNavbar__menu--item-link');
-
-// detailsMenu.addEventListener('click', function () {
-//     generalCard.classList.add('cardHide');
-//     detailsCard.classList.remove('cardHide');
-// })
-
 detailsMenu.addEventListener('click', function () {
     toogleVisibility(detailsCard)
 })
@@ -145,7 +137,7 @@ personalMenu.addEventListener('click', function () {
     toogleVisibility(personalCard)
 })
 payoutMenu.addEventListener('click', function () {
-    toogleVisibility(pauoutCard)
+    toogleVisibility(payoutCard)
 })
 postbackMenu.addEventListener('click', function () {
     toogleVisibility(postbackCard)
@@ -160,3 +152,10 @@ function toogleVisibility(visibleCard) {
     visibleCard.classList.remove('cardHide');
 }
 
+function toggleMenu() {
+    document.querySelector('.leftNavbar_menuWrap').classList.toggle('show')
+}
+
+document.querySelector('.leftNavbar__header--hamburger').addEventListener('click', function () {
+    toggleMenu()
+});
